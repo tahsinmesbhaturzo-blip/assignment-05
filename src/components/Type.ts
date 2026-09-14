@@ -4,7 +4,7 @@ export interface TechnologiesType{
     category: string;
     description: string;
     icon: string;
-    rating: Number;
+    rating: number;
     difficulty: string;
     badge: string
   }
