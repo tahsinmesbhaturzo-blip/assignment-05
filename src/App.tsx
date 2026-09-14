@@ -5,6 +5,7 @@ import Footer from "./components/Footer"
 import Nav from "./components/Nav"
 import Technologies from "./components/Technologies";
 
+
 const techFatch = async (): Promise<TechnologiesType[]> => {
   const res = await fetch("/data.json");
   const data = await res.json();

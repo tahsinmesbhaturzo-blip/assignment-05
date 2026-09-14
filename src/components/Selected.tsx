@@ -16,7 +16,6 @@ const Selected = ({ selectedTechs, onRemove, onRemoveAll }: SelectedProps) => {
         {count === 0 ? "No technologies selected yet." : `${count} Technology Selected`}
       </p>
 
-      {/* Empty State vs Selected List */}
       {count === 0 ? (
         <div className="border-2 border-dashed border-gray-200 rounded-xl p-8 text-center">
           <p className="text-sm text-gray-400 font-medium">Your stack is empty.</p>
@@ -36,7 +35,6 @@ const Selected = ({ selectedTechs, onRemove, onRemoveAll }: SelectedProps) => {
                 </div>
               </div>
 
-              {/* Remove item button */}
               <button
                 onClick={() => onRemove(item.id)}
                 className="text-gray-400 hover:text-red-500 transition p-1"
@@ -47,7 +45,6 @@ const Selected = ({ selectedTechs, onRemove, onRemoveAll }: SelectedProps) => {
             </div>
           ))}
 
-          {/* Remove All Button */}
           <button
             onClick={onRemoveAll}
             className="w-full mt-3 py-2.5 border border-red-200 text-red-500 rounded-xl font-semibold text-sm hover:bg-red-50 transition"

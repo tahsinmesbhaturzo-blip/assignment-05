@@ -10,10 +10,8 @@ const TechnologiesCard = ({ technology, onAdd, isSelected }: TechnologiesCardPro
   return (
     <div className="bg-white p-5 rounded-2xl border border-gray-100 shadow-sm hover:shadow-md transition duration-200 flex flex-col justify-between">
       <div>
-        {/* Top Header Section */}
         <div className="flex justify-between items-start mb-3">
           <div className="w-10 h-10 flex items-center justify-center rounded-lg bg-gray-50">
-            {/* dynamic image URL fallback to text placeholder if broken */}
             <img 
               src={technology.icon} 
               alt={technology.name} 
@@ -28,7 +26,6 @@ const TechnologiesCard = ({ technology, onAdd, isSelected }: TechnologiesCardPro
           )}
         </div>
 
-        {/* Info Section */}
         <h3 className="text-lg font-bold text-gray-800">{technology.name}</h3>
         <p className="text-xs text-gray-500 mt-1 line-clamp-2 leading-relaxed">
           {technology.description}
@@ -36,7 +33,6 @@ const TechnologiesCard = ({ technology, onAdd, isSelected }: TechnologiesCardPro
       </div>
 
       <div className="mt-4">
-        {/* Badges & Rating */}
         <div className="flex items-center justify-between text-xs text-gray-500 mb-4 font-medium">
           <div className="flex items-center gap-2">
             <span className="bg-gray-100 px-2 py-0.5 rounded text-gray-600">{technology.category}</span>
@@ -45,7 +41,6 @@ const TechnologiesCard = ({ technology, onAdd, isSelected }: TechnologiesCardPro
           <span className="text-amber-500 font-semibold">★ {technology.rating}</span>
         </div>
 
-        {/* Action Button */}
         <button
           onClick={() => onAdd(technology)}
           disabled={isSelected}
