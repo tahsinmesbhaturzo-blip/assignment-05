@@ -9,11 +9,11 @@ const Nav = () => {
             <a className="md:hidden "><img src={burger} alt="Logo" /></a>
             <a href=""><img className="md:flex justify-right" src={logo} alt="Logo" /></a>
             <ul className=" gap-6 md:flex hidden ">
-                <li><a className="text-[#DB2777]" href="#home">Home</a></li>
-                <li><a className="hover:text-[#DB2777]" href="#technologies">Technologies</a></li>
-                <li><a className="hover:text-[#DB2777]" href="#projects">Projects</a></li>
-                <li><a className="hover:text-[#DB2777]" href="#about">About</a></li>
-                <li><a className="hover:text-[#DB2777]" href="#contact">Contact</a></li>
+                <li><a className="text-pink-600 font-semibold" href="#">Home</a></li>
+                <li><a className="font-semibold" href="#">Technologies</a></li>
+                <li><a className="font-semibold" href="#">Projects</a></li>
+                <li><a className="font-semibold" href="#">About</a></li>
+                <li><a className="font-semibold" href="#">Contact</a></li>
             </ul>
             <div className="flex gap-4">
                 <button className="text-sm cursor-pointer font-medium text-gray-600 hover:text-pink-600">Sign In</button>
