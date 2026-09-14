@@ -40,7 +40,7 @@ const Selected = ({ selectedTechs, onRemove, onRemoveAll }: SelectedProps) => {
                 className="text-gray-400 hover:text-red-500 transition p-1"
                 aria-label="Remove item"
               >
-                ✕
+                ❌
               </button>
             </div>
           ))}
